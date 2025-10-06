@@ -83,7 +83,7 @@ export function PDFManager() {
 
       initializeMeeting();
     }
-  }, []); // Run once on mount
+  }, [currentMeeting, loadingMeeting]); // Include dependencies
 
   const createNewMeeting = async () => {
     console.log("=== CREATING NEW MEETING ===");
